@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="container">
+        <div class="row">
+            <div class="col"></div>
+            <div class="col">
+                <h1>CSS Margin</h1>
+            </div>
+            <div class="col"></div>
+        </div>
+        <div class="row">
+            <p>               
+                Margins are the empty spaces surrounding an element's content box. They create separation between elements, preventing them from overlapping and improving visual flow.
+            </p>
+            <h5>Properties</h5>
+            <dl>
+                <dt>margin</dt>
+                <dd>
+                    This shorthand property allows you to set all margins at once (top, right, bottom, left) in one line.
+                    <ul>
+                        <li>margin-left</li>
+                        <li>margine-top</li>
+                        <li>margin-right</li>
+                        <li>margine-bottom</li>
+                    </ul>
+                </dd>
+                <dt>Value</dt>
+                <dd>
+                    specifies margine values.
+                    <ul>
+                        <li>Pixels (px): Precise unit for specific pixel spacing.</li>
+                        <li>Percentage (%): Relative unit based on the element's parent element size.</li>
+                        <li>Em (em): Relative unit based on the font size of the parent element.</li>
+                        <li>Rem (rem): Relative unit based on the root element's font size.</li>
+                    </ul>
+                </dd>
+            </dl>
+            <div>
+                <h5>Basic Syntax</h5>
+                <code>
+                    <pre>
+                        margin-top: 50px 50px 75px 100px;
+                    </pre>
+                </code>
+            </div>
+        </div>
+        <div class="row">
+            <h3>Example</h3>
+            <div class="col">
+                <h5>Code</h5>
+                <code>
+                    <pre>
+                        &lt;h6 
+                        Style="
+                            border: 1px solid red;
+                            margin-top: 100px;
+                            margin-bottom: 100px;
+                            margin-right: 150px;
+                            margin-left: 80px;"
+                        &gt;
+                        This is Example text to display how the margin property works
+                        &lt;/h6&gt;
+                    </pre>
+                </code>
+                
+            </div>
+            <div class="col">
+                <h4>Result</h4>
+                <div style="border: 2px solid black;">
+                    <h6 
+                        Style="
+                            border: 1px solid red;
+                            margin-top: 100px;
+                            margin-bottom: 100px;
+                            margin-right: 150px;
+                            margin-left: 80px;
+                            "
+                        >
+                            This is Example text to display how the margin property works
+                        </h6>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="container">
+        <div class="row">
+            <div class="col"></div>
+            <div class="col"><h1>HTML Time</h1></div>
+            <div class="col"></div>
+        </div>
+        <div class="row">
+            <p>
+                The &lt;time&gt; tag in HTML defines a specific point in time or a duration. It's a semantic element that provides both human-readable and machine-readable information about time, aiding accessibility and machine parsing.
+            </p>
+            <h5>Purpose</h5>
+            <ul>
+                <li>
+                    Represent a specific date and/or time.
+                </li>
+                <li>
+                    Indicate event durations or deadlines
+                </li>
+                <li>
+                    Provide temporal information for search engines and assistive technologies.
+                </li>
+            </ul>
+            <h4>Attribute</h4>
+            <dl>
+                <dt>datetime</dt>
+                <dd>
+                    Mandatory attribute specifying the date and time in a machine-readable format (e.g., 2023-12-11T18:25:00Z for 6:25 PM PST).
+                </dd>
+                <dt>pubdate</dt>
+                <dd>
+                    Indicates the publication date of the content.
+                </dd>
+                <dt>title</dt>
+                <dd>
+                    Provides an optional title for the time information.
+                </dd>
+            </dl>
+        </div>
+        <div class="row">
+            <h4>Basic Syntax</h4><br>
+            <code>
+                <pre>
+                    &lt;time datetime="2008-01-01 24:00"&gt;New year&lt;/time&gt;
+                </pre>
+            </code>
+        </div>
+        <div class="row">
+            <h4>Example</h4>
+            <div class="col">
+                <h4>Code</h4>
+                <code>
+                    <pre>
+                        &lt;time datetime="2024-01-15"&gt;Submission deadline: January 15, 2024&lt;/time&gt;
+                    </pre>
+                </code>
+            </div>
+            <div class="col">
+                <h4>Results</h4>
+                <time datetime="2024-01-15">Submission deadline: January 15, 2024</time>
+                 
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>

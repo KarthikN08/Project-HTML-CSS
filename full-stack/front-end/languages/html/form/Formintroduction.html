@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="container">
+        <div class="row">
+            <div class="col"></div>
+            <div class="col">
+                <h1>HTML Forms</h1>
+            </div>
+            <div class="col"></div>
+        </div>
+        <div class="row">
+            <p>
+                Forms are interactive elements used to collect user input and submit it to a server for processing. They are essential components of many web applications and can be used for various purposes, such as:
+            </p>
+            <ul>
+                <li>
+                    User registration and login: Gathering user information for account creation and authentication.
+                </li>
+                <li>
+                    Contact forms: Enabling users to send messages and inquiries.
+                </li>
+                <li>
+                    Surveys and polls: Collecting feedback and data from users.
+                </li>
+                <li>
+                    Online orders and purchases: Processing transactions and gathering payment information.
+                </li>
+                <li>
+                    Product search and filtering: Refining user searches based on specific criteria.
+                </li>
+            </ul>
+            <h4>Basic Syntax</h4><br>
+            <code>
+                <pre>
+                    &lt;form action="/submit" method="post"&gt;
+                    &lt;label for="name"&gt;Name:&lt;/label&gt;
+                    &lt;input type="text" id="name" name="name" required&gt;&lt;br&gt;
+                    &lt;label for="email"&gt;Email:&lt;/label&gt;
+                    &lt;input type="email" id="email" name="email" required&gt;&lt;br&gt;
+                    &lt;button type="submit"&gt;Submit&lt;/button&gt;
+                    &lt;/form&gt;
+                </pre>
+            </code>
+        </div>
+        <div class="row">
+            <h4>Form element</h4><br>
+            <dl>
+                <dt>&lt;form&gt;</dt>
+                <dd> Defines the main form element.</dd>
+                <dt>action</dt>
+                <dd>attribute - Specifies the URL where the form data will be submitted.</dd>
+                <dt>method</dt>
+                <dd>attribute - Defines how the form data will be sent (e.g., post or get).</dd>
+                <dt>&lt;label&gt;</dt>
+                <dd>Associates a label with an input field for user guidance.</dd>
+                <dt>&lt;input&gt;</dt>
+                <dd>Represents the input field where users enter data.</dd>
+                <dt>type</dt>
+                <dd> attribute - Defines the type of input field (e.g., text, email, password, checkbox, radio).</dd>
+                <dt>&lt;button&gt;</dt>
+                <dd>Represents the submit button that triggers form submission.</dd>
+                <dt>id</dt>
+                <dd>attribute - Assigns a unique identifier to the input field.</dd>
+                <dt>name</dt>
+                <dd>attribute - Identifies the name of the input field for data submission</dd>
+                <dt>&lt;select&gt;</dt>
+                <dd>Creates a dropdown menu for users to choose from multiple options.</dd>
+                <dt>&lt;textarea&gt;</dt>
+                <dd>Provides a multi-line text box for users to enter longer content.</dd>
+                <dt>required</dt>
+                <dd>attribute: Ensures users fill in the required fields before submitting the form.</dd>
+                <dt>Placeholder</dt>
+                <dd>attribute: Displays a hint inside the input field when it's empty.</dd>
+                <dt>disabled</dt>
+                <dd>ttribute: Disables an input field to prevent user interaction.</dd>
+            </dl>
+        </div>
+        <div class="row">
+            <h4>Example</h4><br>
+            <div class="col">
+                <h4>Code</h4>
+                <code>
+                    <pre>
+                        &lt;form action="/submit" method="post"&gt;
+                        &lt;label for="text"&gt;Text:&lt;/label&gt;
+                        &lt;input type="text" id="text" name="text" required&gt;
+                        &lt;br&gt;
+
+                        &lt;label for="email"&gt;Email:&lt;/label&gt;
+                        &lt;input type="email" id="email" name="email" required&gt;
+                        &lt;br&gt;
+
+                        &lt;label for="password"&gt;Password:&lt;/label&gt;
+                        &lt;input type="password" id="password" name="password" required&gt;
+                        &lt;br&gt;
+
+                        &lt;label for="url"&gt;Website URL:&lt;/label&gt;
+                        &lt;input type="url" id="url" name="url"&gt;
+                        &lt;br&gt;
+
+                        &lt;label for="age"&gt;Age:&lt;/label&gt;
+                        &lt;input type="number" id="age" name="age" min="18" max="120"&gt;
+                        &lt;br&gt;
+
+                        &lt;label for="phone"&gt;Phone Number:&lt;/label&gt;
+                        &lt;input type="tel" id="phone" name="phone"&gt;
+                        &lt;br&gt;
+
+                        &lt;label for="date"&gt;Date:&lt;/label&gt;
+                        &lt;input type="date" id="date" name="date"&gt;
+                        &lt;br&gt;
+
+                        &lt;label for="time"&gt;Time:&lt;/label&gt;
+                        &lt;input type="time" id="time" name="time"&gt;
+                        &lt;br&gt;
+
+                        &lt;label for="file"&gt;Upload a File:&lt;/label&gt;
+                        &lt;input type="file" id="file" name="file"&gt;
+                        &lt;br&gt;
+
+                        &lt;label for="message"&gt;Message:&lt;/label&gt;
+                        &lt;textarea id="message" name="message" rows="5"&gt;&lt;/textarea&gt;
+                        &lt;br&gt;
+
+                        &lt;label&gt;Gender:&lt;/label&gt;
+                        &lt;br&gt;
+
+                        &lt;input type="radio" id="male" name="gender" value="male"&gt;
+                        &lt;label for="male"&gt;Male&lt;/label&gt;
+                        &lt;br&gt;
+
+                        &lt;input type="radio" id="female" name="gender" value="female"&gt;
+                        &lt;label for="female"&gt;Female&lt;/label&gt;
+                        &lt;br&gt;
+
+                        &lt;label&gt;Interests:&lt;/label&gt;
+
+                        &lt;br&gt;
+
+
+                        &lt;input type="checkbox" id="music" name="interests[]" value="music"&gt;
+
+                        &lt;label for="music"&gt;Music&lt;/label&gt;
+
+                        &lt;br&gt;
+
+                        &lt;input type="checkbox" id="reading" name="interests[]" value="reading"&gt;
+
+                        &lt;label for="reading"&gt;Reading&lt;/label&gt;
+                        &lt;br&gt;
+
+                        &lt;input type="checkbox" id="sports" name="interests[]" value="sports"&gt;
+                        &lt;label for="sports"&gt;Sports&lt;/label&gt;
+
+                        &lt;label for="country"&gt;Country:&lt;/label&gt;
+                        &lt;select id="country" name="country"&gt;
+                        &lt;option value="india"&gt;India&lt;/option&gt;
+                        &lt;option value="usa"&gt;United States&lt;/option&gt;
+                        &lt;option value="uk"&gt;United Kingdom&lt;/option&gt;
+                        &lt;/select&gt;
+
+                        &lt;button type="submit"&gt;Submit&lt;/button&gt;
+                        &lt;/form&gt;
+
+                    </pre>
+                </code>
+            </div>
+            <div class="col ">
+                <h4>Results</h4><br>
+                <form action="/submit" method="post" >
+                    <div>
+                        <label for="text">Text:</label>
+                        <input type="text" id="text" name="text" required><br>
+                    </div>
+                    <div>
+                        <br><label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required><br>  
+                    </div>
+                    <div>
+                        <br><label for="password">Password:</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    <div>
+                        <br><label for="url">Website URL:</label>
+                        <input type="url" id="url" name="url">
+                    </div>
+                    <div>
+                        <br><label for="age">Age:</label>
+                        <input type="number" id="age" name="age" min="18" max="120">
+                    </div>
+                    <div>
+                        <br><label for="phone">Phone Number:</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    <div>
+                        <br><label for="date">Date:</label>
+                        <input type="date" id="date" name="date">
+                    </div>
+                    <div>
+                        <br><label for="time">Time:</label>
+                        <input type="time" id="time" name="time">
+                    </div>
+                    <div>
+                        <br><label for="file">Upload a File:</label>
+                        <input type="file" id="file" name="file">
+                    </div>
+                    <div>
+                        <br><label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="5"></textarea>
+                    </div>
+                    <div>
+                        <br><label>Gender:</label>
+                        <br>
+                        <input type="radio" id="male" name="gender" value="male">
+                        <label for="male">Male</label>
+                        <br>
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">Female</label>
+                    </div>
+                    <div>
+                        <br><label>Interests:</label>
+                        <br>
+                        <input type="checkbox" id="music" name="interests[]" value="music">
+                        <label for="music">Music</label>
+                        <br>
+                        <input type="checkbox" id="reading" name="interests[]" value="reading">
+                        <label for="reading">Reading</label>
+                        <br>
+                        <input type="checkbox" id="sports" name="interests[]" value="sports">
+                        <label for="sports">Sports</label>
+                    </div>
+                    <div>
+                        <br>
+                        <label for="country">Country:</label>
+                        <select id="country" name="country">
+                            <option value="india">India</option>
+                            <option value="usa">United States</option>
+                            <option value="uk">United Kingdom</option>
+                        </select>
+                    </div>
+                    <div>
+                        <br> <button type="submit">Submit</button>
+                        <button type="reset">Reset</button>
+                    </div>
+                  </form>
+                  
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>

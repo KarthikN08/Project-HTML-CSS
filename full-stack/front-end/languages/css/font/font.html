@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="container">
+        <div class="row">
+            <div class="col"></div>
+            <div class="col">
+                <h1> CSS Font</h1>
+            </div>
+            <div class="col"></div>
+        </div>
+        <div class="row">
+          <p>
+            The font property in CSS allows you to control the appearance of text within an element. It encompasses several sub-properties that customize various aspects of the font, like family, size, style, and weight.
+          </p>
+          <h5>Syntax</h5>
+          <code>
+            <pre>
+                selector {
+                    font: font-style font-variant font-weight font-size/line-height font-family;
+                  }
+            </pre>
+          </code>
+          <h5>Sub-properties:</h5>
+          <dl>
+            <dt>font-style:</dt>
+            <dd>
+                Normal, italic, oblique. <br>
+                <ul>
+                    <li> Normal: This is the default style for text and displays it upright.</li>
+                    <li>Italic: This style slants the text to the right, often used for emphasis or stylistic purposes.</li>
+                    <li>Oblique: This style also slants the text, but at a different angle than italics. It's less commonly used and often considered less readable than italics.</li>
+
+                </ul>
+            </dd>
+            <dt>font-variant: </dt>
+            <dd>
+                Normal, small-caps. <br>
+                <ul>
+                    <li>Normal: This is the default variant and displays the text in its standard form.</li>
+                    <li>Small-caps: This variant displays all lowercase letters in the size of uppercase letters, keeping uppercase letters unchanged. It's primarily used for headings or short phrases.</li>
+                </ul>
+            </dd>
+            <dt>font-weight:</dt>
+            <dd>
+                Normal, bold, lighter, bolder, etc. <br>
+                <ul>
+                    <li>Normal: This is the default weight, displaying the text with its standard thickness.</li>
+                    <li>Bold: This weight makes the text thicker and more prominent, often used for headings or important information.</li>
+                    <li>Lighter: This weight makes the text thinner than the default, often used for less important text.</li>
+                    <li>Bolder: This weight makes the text even bolder than the standard bold weight.</li>
+                    <li>Other weights: Numbers (100 to 900) can also be used to specify specific levels of boldness, with higher numbers indicating bolder text.</li>
+                </ul>
+
+            </dd>
+            <dt>font-size:</dt>
+            <dd>
+                Absolute units (px, pt), relative units (em, rem), keywords (xx-small, larger). <br>
+                <li>Absolute units (px, pt): These units define the font size in fixed units, like pixels (px) and points (pt).</li>
+                <li>Relative units (em, rem): These units define the font size relative to another element. An "em" is relative to the font size of the parent element, while a "rem" is relative to the root element's font size.</li>
+                <li>Keywords (xx-small, larger): These keywords provide predefined relative font sizes, ranging from xx-small (smallest) to larger (largest).</li>
+            </dd>
+            <dt>line-height:</dt>
+            <dd>
+                Creates space between lines of text.
+            </dd>
+            <dt>font-family:</dt>
+            <dd>
+                Specifies the font family name(s).
+            </dd>
+          </dl>
+          
+          <h5>Example</h5>
+          <code>
+            <pre>
+                p { font: italic small-caps bold 16px/1.5 serif; }: Applies various styles to &lt;p&gt; elements, making them italic, small caps, bold, 16px in size with 1.5 line height, and using a serif font family.
+                h1 { font-size: 2em; font-family: "Open Sans", sans-serif; }: Makes all &lt;h1&gt; elements twice the default font size and uses the "Open Sans" font if available, fallback to a sans-serif font.
+                .highlight { font-weight: bold; }: Applies bold weight to all elements with the class .highlight.
+            </pre>
+          </code>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="container">
+        <div class="row">
+            <div class="col"></div>
+            <div class="col">
+                <h1>CSS Selectors</h1>
+            </div>
+            <div class="col"></div>
+        </div>
+        <div class="row">
+            <p>
+                A CSS selector is a pattern used to identify HTML elements on a web page to which specific CSS styles will be applied. In simpler terms, it's like a pointing tool that tells the browser which elements on the page should be styled in a certain way.
+            </p>
+            <h4>Types of Selectors</h4>
+            <dl>
+                <dt>Element Selectors:</dt>
+                <dd>
+                    Target elements based on their HTML tag name. <br>
+                    Example: p { color: red; } selects all &lt;p&gt; elements and makes their text red.
+
+                </dd>
+                <dt>CID Selectors:</dt>
+                <dd>
+                    Target an element with a unique ID attribute. <br>
+                    Example: #main-header { background-color: blue; } selects the element with the ID #main-header and sets its background color to blue.
+                </dd>
+                <dt>Class Selectors:</dt>
+                <dd>
+                    Target elements with a specific class attribute. <br>
+                    Example: .highlight { font-weight: bold; } selects all elements with the class .highlight and makes their text bold.
+                </dd>
+                <dt>Attribute Selectors:</dt>
+                <dd>
+                    Target elements based on specific attributes and values. <br>
+                    Examples: <br>
+                        a[href] selects all &lt;a&gt; elements with an href attribute. <br>
+                        img[data-type="profile"] selects all &lt;img&gt; elements with a data-type attribute equal to "profile".
+                </dd>
+                <dt>Descendant Selectors:</dt>
+                <dd>
+                    Target elements within other elements. <br>
+                    Examples: <br>
+                        p &gt; span { font-style: italic; } selects all &lt;span&gt; elements directly inside &lt;p&gt; elements and makes their text italic. <br>
+                        .box .content { padding: 10px; } selects all .content elements within elements with the class .box and adds padding.
+                </dd>
+                <dt> Universal Selector:</dt>
+                <dd>
+                    Targets all elements. <br>
+                    Example: * { margin: 0; } sets the margin to 0 for all elements on the page.
+                </dd>
+                <dt>Combinators:</dt>
+                <dd>
+                    Combine selectors for more specific targeting. <br>
+                    Commonly used combinators: <br>
+                    &gt; selects a child element. <br>
+                    + selects the next sibling element. <br>
+                    ~ selects all sibling elements. <br>
+                    , separates multiple selectors targeting the same rule. <br>
+                </dd>
+                <dt>Pseudo-classes and Pseudo-elements:</dt>
+                <dd>
+                    Target elements based on their state or behavior. <br>
+                        Examples: <br>
+                        
+                            :hover targets elements when the user hovers over them. <br>
+                            :active targets elements when the user clicks them. <br>
+                            ::first-line targets the first line of an element. <br>
+                </dd>
+            </dl>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>

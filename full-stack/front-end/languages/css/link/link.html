@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="container">
+        <div class="row">
+            <div class="col"></div>
+            <div class="col">
+                <h1>CSS Link</h1>
+            </div>
+            <div class="col"></div>
+        </div>
+        <div class="row">
+            <p>
+                The &lt;link&gt; tag in HTML plays a crucial role in linking your CSS styles to your web pages. It allows you to separate the presentation logic from the content, ensuring cleaner code and easier maintenance.
+            </p>
+            <br>
+            <h5>CSS Link Pseudo-Classes: Targeting Links by State</h5>
+            <dl>
+                <dt>a:link:</dt>
+                <dd>
+                    This applies styles to unvisited links, meaning links the user hasn't clicked yet. It's commonly used to define the default appearance of links.
+                </dd>
+                <dt>a:visited:</dt>
+                <dd>
+                    This targets links the user has visited at least once. It allows you to highlight visited links visually, providing a subtle indication of their interaction history.
+                </dd>
+                <dt>a:hover:</dt>
+                <dd>
+                    This applies styles to links when the user hovers over them with their mouse cursor. It's used to provide visual feedback and indicate interactivity, encouraging users to click.
+                </dd>
+                <dt>a:active:</dt>
+                <dd>
+                    This targets links the moment they are clicked. This allows for momentary visual changes, like a slight indentation, to confirm the click action.
+                </dd>
+            </dl>
+    
+        </div>
+        <div class="row">
+            <h4>Example</h4><br>
+            <div class="col">
+                <h5>Code</h5> <br>
+                <code>
+                    <pre>
+                        a:link {
+                            color: blue;
+                            text-decoration: underline;
+                          }
+                          
+                          a:visited {
+                            color: purple;
+                            text-decoration: none;
+                          }
+                          
+                          a:hover {
+                            color: #007bff;
+                            text-decoration: underline;
+                          }
+                          
+                          a:active {
+                            background-color: #f0f0f0;
+                          }
+                    </pre>
+                </code>
+            </div>
+            <div class="col">
+                <h5>Result</h5>
+                <ul>
+                    <li>
+                        <a href="https://www.example.com" style=":link{ color: blue;text-decoration: underline;} ">Example link</a>
+                    </li>
+                    <li>
+                        <a href="https://www.example.com" style=":visited{color:red;text-decoration: none;}">Example link</a>
+                    </li>
+                    <li>
+                        <a href="https://www.example.com"style=":hover{color: #007bff;text-decoration: underline;}">Example link</a>
+                    </li>
+                    <li>
+                        <a href="https://www.example.com"style=":active{  background-color: #f0f0f0;}">Example link</a>
+                        <a href="https://www.example.com"style="background:red;">Example link</a>
+                    </li>
+                </ul>
+                <a href="www.example.com"style=":hover{color: red ;text-decoration: underline;}">Example link</a>
+            </div>
+        </div>
+        
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>
+

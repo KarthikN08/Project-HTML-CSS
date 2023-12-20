@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="container">
+        <div class="row">
+            <div class="col"></div>
+            <div class="col">
+                <h1> CSS Media Query</h1>
+            </div>
+            <div class="col"></div>
+        </div>
+        <div class="row">
+          <p>
+            Media queries are a fundamental aspect of creating responsive and adaptive web designs. They enable web developers to tailor the presentation of their content based on the characteristics of the device or screen on which it is viewed.
+          </p>
+          <h5>What are Media Queries</h5>
+          <p>
+            Media queries are CSS techniques that allow you to apply styles based on certain conditions, such as screen size, resolution, or device orientation. They play a crucial role in creating websites that look great and function well across a variety of devices, from large desktop monitors to small mobile screens.
+          </p>         
+          <h5>Syntax</h5>
+          <code>
+            <pre>
+                /* Example of a media query for screens with a maximum width of 600 pixels */
+                @media only screen and (max-width: 600px) {
+                  /* Styles for small screens go here */
+                }
+            </pre>
+          </code>
+          <h4>Common Media Query Features</h4>
+          <dl>
+            <dt>Screen Size</dt>
+            <dd>
+                <code>
+                    <pre>
+                        /* Styles for screens with a width between 601px and 900px */
+                        @media only screen and (min-width: 601px) and (max-width: 900px) {
+                             /* Responsive styles for medium-sized screens */
+                        }
+                    </pre>
+                </code>
+            </dd>
+            <dt>Device Orientation</dt>
+            <dd>
+                <code>
+                    <pre>
+                        /* Styles for devices in landscape orientation */
+                        @media only screen and (orientation: landscape) {
+                          /* Landscape-specific styles */
+                        }
+
+                    </pre>
+                </code>
+            </dd>
+            <dt>Resolution</dt>
+            <dd>
+                <code>
+                    <pre>
+                        /* Styles for devices with a high resolution (Retina displays, for example) */
+                        @media only screen and (min-resolution: 300dpi) {
+                              /* High-resolution styles */
+                        }
+                    </pre>
+                </code>
+            </dd>
+          </dl>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>

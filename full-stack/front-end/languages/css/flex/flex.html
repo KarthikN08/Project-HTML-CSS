@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="container">
+        <div class="row">
+            <div class="col"></div>
+            <div class="col">
+                <h1> CSS flex</h1>
+            </div>
+            <div class="col"></div>
+        </div>
+        <div class="row">
+          <p>
+            CSS Flexbox, or Flexible Box Layout, is a powerful layout model that allows you to design complex web layouts more efficiently and with less code. It provides an intuitive way to distribute space and align items within a container, making it an essential tool for responsive web design.
+          </p>
+          <div>
+            <h5>Basics of flexbox</h5>
+                <p>
+                    Flexbox introduces a new value for the display property, turning an element into a flex container and enabling the use of flex properties.
+                </p>
+          </div>
+          <h5>Syntax</h5>
+          <code>
+            <pre>
+                .container {
+                    display: flex;
+                  }                  
+            </pre>
+          </code>
+          <h5>Other Examples</h5>
+          <dl>
+            <dt>Main Axis and Cross Axis</dt>
+            <dd>
+                <p>
+                    Flex containers have a main axis and a cross axis. The main axis is defined by the flex-direction property, and the cross axis is perpendicular to it.
+                </p>
+                <code>
+                    <pre>
+                        .container {
+                            display: flex;
+                            flex-direction: row; /* or column, column-reverse, row-reverse */
+                          }                          
+                    </pre>
+                </code>
+            </dd>
+            <dt>Justify Content</dt>
+            <dd>
+                <p>
+                    The justify-content property controls the alignment of items along the main axis.
+                </p>
+                <code>
+                    <pre>
+                        .container {
+                            display: flex;
+                            justify-content: space-between; /* or center, flex-start, flex-end, space-around, space-evenly */
+                          }                          
+                    </pre>
+                </code>
+            </dd>
+            <dt>Align Items and Align Self</dt>
+            <dd>
+                <p>
+                    The align-items property aligns items along the cross axis, while align-self can be used to override it for individual flex items.
+                </p>
+                <code>
+                    <pre>
+                        .container {
+                            display: flex;
+                            align-items: center; /* or flex-start, flex-end, stretch, baseline */
+                          }
+                          
+                          .item {
+                            align-self: flex-end; /* overrides align-items for this specific item */
+                          }                          
+                    </pre>
+                </code>
+            </dd>
+            <dt>Flexbox in Action</dt>
+            <dd>
+                <p>
+                    Flexbox is particularly useful for creating responsive and dynamic layouts. Here's a basic example of a flexible card layout:
+                </p>
+                <code>
+                    <pre>
+                        .container {
+                            display: flex;
+                            justify-content: space-around;
+                          }
+                          
+                          .card {
+                            flex: 1;
+                            /* other styling for the card */
+                          }
+                          
+                    </pre>
+                </code>
+            </dd>
+          </dl>
+          <div>
+            <h5>Conclusion</h5>
+            <p>
+                CSS Flexbox simplifies the creation of responsive and intricate layouts, offering a versatile set of tools for web developers. By understanding and leveraging its properties, you can create robust and visually appealing designs with less effort.
+            </p>
+          </div>
+          
+          
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>

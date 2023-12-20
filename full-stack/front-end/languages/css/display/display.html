@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="container">
+        <div class="row">
+            <div class="col"></div>
+            <div class="col">
+                <h1> CSS Display</h1>
+            </div>
+            <div class="col"></div>
+        </div>
+        <div class="row">
+          <p>
+            
+            The display property in CSS is a powerful tool for controlling how elements are displayed on a webpage. It defines the element's box model, which influences its visibility, layout, and interaction with other elements.
+          </p>
+          <h5>Here's a breakdown of the different values you can use with the display property:</h5>
+          <dl>
+            <dt>Block Elements:</dt>
+            <dd>
+              <ul>
+                <li>block: The default behavior for most elements. They occupy the full width available and start on a new line.</li>
+                <li>inline-block: Similar to inline elements, but they occupy their own space and can have height and width defined.</li>
+                <li>flex: Enables flexible layout with the flexbox model.</li>
+                <li>grid: Enables grid layout with the grid model.</li>
+              </ul>
+            </dd>
+            <dt>Inline Elements: </dt>
+            <dd>
+              <ul>
+                <li>inline: Appears inline with the surrounding text, without starting a new line.</li>
+                <li>inline-block: Can also be used on inline elements for more flexibility.</li>
+              </ul>
+            </dd>
+            <dt> Special Values:/dt>
+            <dd>
+              <ul>
+                <li>none: Hides the element completely.</li>
+                <li>table: Displays the element as a table.</li>
+                <li>table-cell: Displays the element as a table cell.</li>
+              </ul>
+            </dd>
+            
+          </dl>
+          <h5>Syntax</h5>
+          <code>
+            <pre>
+                selector {
+                    display: option;
+                  }
+            </pre>
+          </code>
+          <h5>Example</h5>
+          <code>
+            <pre>
+                .image {
+                    display: block; /* Display image as a block element */
+                  }
+                  
+                  .button {
+                    display: inline-block; /* Display button inline with spacing */
+                  }
+                  
+                  .menu {
+                    display: flex; /* Layout menu items with flexbox */
+                  }
+                  
+                  .hidden {
+                    display: none; /* Hide element completely */
+                  }
+            </pre>
+          </code>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>

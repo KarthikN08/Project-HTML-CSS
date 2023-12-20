@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="container">
+        <div class="row">
+            <div class="col"></div>
+            <div class="col">
+                <h1> CSS Height</h1>
+            </div>
+            <div class="col"></div>
+        </div>
+        <div class="row">
+          <p>
+            The height property, like its companion width, is a cornerstone of CSS layout and design. It defines the height of an element and plays a crucial role in shaping the visual appearance of your web pages.
+          </p>
+          <h5>Values</h5>
+          <dl>
+            <dt>Pixel (px)</dt>
+            <dd>
+              Absolute unit specifying the height in pixels.
+            </dd>
+            <dt>Percentage (%): </dt>
+            <dd>
+              Relative unit calculating the height as a percentage of the containing block's height.
+            </dd>
+            <dt>em/rem:</dt>
+            <dd>
+              Relative units based on the font size of the element or the root element.
+            </dd>
+            <dt>vw/vh: </dt>
+            <dd>
+              Viewport units specifying the width as a percentage of the viewport width/height.
+            </dd>
+            <dt>auto:</dt>
+            <dd>
+              Applies the natural height of the element.
+            </dd>
+            <dt>initial/inherit:</dt>
+            <dd>
+              Sets the height to its initial/inherited value.
+            </dd>
+          </dl>
+          <h5>Syntax</h5>
+          <code>
+            <pre>
+                selector {
+                    height: value;
+                  }
+            </pre>
+          </code>
+          <h5>Example</h5>
+          <code>
+            <pre>
+                img { height: 200px; }: Sets the height of all &lt;img&gt; elements to 200 pixels.
+                .box { height: 50%; }: Sets the height of elements with the class .box to 50% of their containing block's height.
+                p { height: 1.5em; }: Sets the height of all &lt;p&gt; elements to 1.5 times the size of their font size.
+                #header { height: 10vh; }: Sets the height of the element with the ID #header to 10% of the viewport height.
+                body { height: auto; }: Allows the &lt;body&gt; element to take its natural height based on its content.
+            </pre>
+          </code>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>

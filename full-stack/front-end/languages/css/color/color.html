@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="container">
+        <div class="row">
+            <div class="col"></div>
+            <div class="col">
+                <h1> CSS Color</h1>
+            </div>
+            <div class="col"></div>
+        </div>
+        <div class="row">
+          <p>
+            The color property is a fundamental aspect of CSS, controlling the foreground color of text and text decorations within an element. It plays a crucial role in establishing the visual hierarchy and enhancing readability of your website.
+          </p>
+          <h5>Values</h5>
+          <dl>
+            <dt>Keywords:</dt>
+            <dd>
+                Predefined names like red, green, blue, etc
+            </dd>
+            <dt>Hexadecimal codes: </dt>
+            <dd>
+                Six-digit codes starting with a #, e.g., #ff0000 for red.
+            </dd>
+            <dt>RGB/RGBA values:</dt>
+            <dd>
+                Specify the red, green, and blue values directly (0-255) or with an alpha channel for transparency (0-1).
+            </dd>
+          </dl>
+          <h5>Syntax</h5>
+          <code>
+            <pre>
+                selector {
+                    color: value;
+                  }
+            </pre>
+          </code>
+          <h5>Example</h5>
+          <code>
+            <pre>
+                h1 { color: red; }: Sets the color of all &lt;h1&gt; elements to red.
+                p { color: #333; }: Sets the color of all &lt;p&gt; elements to a dark gray shade.
+                .box { color: rgb(255, 0, 0); }: Sets the color of elements with the class .box to red using RGB values.
+                a { color: rgba(0, 0, 255, 0.5); }: Makes all &lt;a&gt; elements blue with a 50% transparency.
+            </pre>
+          </code>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>
